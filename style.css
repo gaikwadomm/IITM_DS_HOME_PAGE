@@ -422,30 +422,14 @@ text-decoration: underline;
 }
 
 @media (max-width: 768px) {
-.footer-bottom {
-flex-direction: column;
-align-items: center;
-}
-}
-
-@media (max-width: 768px) {
-    .box {
-        width: 100%;
-    }
-}
-
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    header {
+    .footer-bottom {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
-    .search-bar {
+    .box, .search-bar {
         width: 100%;
-        margin-bottom: 8px;
     }
-    nav {
+    header, nav {
         flex-direction: column;
         align-items: flex-start;
     }
