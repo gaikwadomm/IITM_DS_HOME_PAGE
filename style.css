@@ -421,30 +421,78 @@ margin: 0 5px;
 text-decoration: underline;
 }
 
+/* Media Queries for Mobile Devices */
 @media (max-width: 768px) {
+    header, nav, .footer-section, .content-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .search-bar, .sign-in-btn, .nav-links, .box, .stat-item, .news-item {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .hero-section img {
+        height: auto;
+    }
+    
+    .content-title {
+        font-size: 20px;
+    }
+    
+    .news-section {
+        flex-direction: column;
+    }
+    
+    .statistics, .six-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .box img, .stat-item img {
+        height: auto;
+    }
+    
+    .faq-tabs button {
+        padding: 8px 12px;
+    }
+    
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
     .footer-bottom {
         flex-direction: column;
         align-items: center;
     }
-    .box, .search-bar {
-        width: 100%;
-    }
+}
+
+/* Media Queries for Smaller Mobile Devices */
+@media (max-width: 576px) {
     header, nav {
-        flex-direction: column;
-        align-items: flex-start;
+        padding: 12px 5%;
     }
+    
     .nav-links {
         flex-direction: column;
-        gap: 8px;
-        width: 100%;
+        gap: 12px;
     }
-    .hero-section img {
-        height: auto;
+    
+    .about-text-wrapper {
+        height: 250px;
     }
-    .content-section {
-        padding: 16px;
+    
+    .footer-section h3 {
+        font-size: 18px;
     }
-    .news-section {
-        flex-direction: column;
+    
+    .faq-header, .announcement-bar, .content-title {
+        font-size: 16px;
+    }
+    
+    .stat-item, .box {
+        width: 90%;
     }
 }
